@@ -1,0 +1,212 @@
+.resumePresentation {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+#photoStarter {
+  width: 20%;
+}
+
+#footerPresentation {
+  margin-top: 100px;
+}
+
+.photoFamille {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bulbizarre {
+  position: absolute;
+  margin-top: 5%;
+  left: 40%;
+}
+
+.herbizarre {
+  position: absolute;
+  margin-top: 15%;
+  left: 50%;
+}
+
+.florizarre {
+  position: absolute;
+  margin-top: 20%;
+  left: 35%;
+}
+
+.caracteristiqueBulbi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  text-align: center;
+  margin-top: 40%;
+  margin-inline: 30px;
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+  border: 2px solid green;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 1;
+  border: 2px solid green;
+}
+
+.three {
+  grid-column: 3;
+  grid-row: 1;
+  border: 2px solid green;
+}
+
+.four {
+  grid-column: 1;
+  grid-row: 2;
+  border: 2px solid green;
+}
+
+.five {
+  grid-column: 2;
+  grid-row: 2;
+  border: 2px solid green;
+}
+
+.six {
+  grid-column: 3;
+  grid-row: 2;
+  border: 2px solid green;
+}
+
+@media (max-width: 1200px) {
+  .boutons {
+    width: 100%;
+  }
+  #boutonBulbi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .caracteristiqueBulbi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    text-align: center;
+    margin-top: 40%;
+    margin-inline: 30px;
+  }
+  
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+    border: 2px solid green;
+  }
+  
+  .two {
+    grid-column: 2;
+    grid-row: 1;
+    border: 2px solid green;
+  }
+  
+  .three {
+    grid-column: 1;
+    grid-row: 2;
+    border: 2px solid green;
+  }
+  
+  .four {
+    grid-column: 2;
+    grid-row: 2;
+    border: 2px solid green;
+  }
+  
+  .five {
+    grid-column: 1;
+    grid-row: 3;
+    border: 2px solid green;
+  }
+  
+  .six {
+    grid-column: 2;
+    grid-row: 3;
+    border: 2px solid green;
+  }
+
+}
+@media (max-width: 767px) {
+
+  #photoStarter {
+    width: 30%;
+  }
+
+  .bulbizarre {
+    position: absolute;
+    margin-top: 10%;
+    left: 40%;
+  }
+  
+  .herbizarre {
+    position: absolute;
+    margin-top: 25%;
+    left: 55%;
+  }
+  
+  .florizarre {
+    position: absolute;
+    margin-top: 33%;
+    left: 33%;
+  }
+  .caracteristiqueBulbi {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    text-align: center;
+    margin-top: 70%;
+    margin-inline: 30px;
+  }
+  
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+    border: 2px solid green;
+  }
+  
+  .two {
+    grid-column: 1;
+    grid-row: 2;
+    border: 2px solid green;
+  }
+  
+  .three {
+    grid-column: 1;
+    grid-row: 3;
+    border: 2px solid green;
+  }
+  
+  .four {
+    grid-column: 1;
+    grid-row: 4;
+    border: 2px solid green;
+  }
+  
+  .five {
+    grid-column: 1;
+    grid-row: 5;
+    border: 2px solid green;
+  }
+  
+  .six {
+    grid-column: 1;
+    grid-row: 6;
+    border: 2px solid green;
+  }
+}
+

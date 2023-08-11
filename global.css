@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+}
+.titreBanniere {
+    text-align: center;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    background: rgb(7,100,212);
+    background: linear-gradient(90deg, rgba(7,100,212,1) 0%, rgba(249,247,118,1) 50%, rgba(249,249,249,1) 100%);
+    padding-bottom: 50px;
+}
+.banniere {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 50px;
+    justify-content: space-around;
+}
+
+.boutons {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.logo {
+    width: 800px;
+}
+
+.banniereImage {
+    padding: 50px;
+    transform: rotate(20deg);
+    margin-top: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    border: 1px solid black;
+    z-index: 99;
+}
+.ri-home-2-fill {
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.menu {
+    display: flex;
+    font-size: 30px;
+    width: 500px;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.bouton {
+    font-size: 25px;
+    background-color: rgb(44, 112, 237);
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    width: 150px;
+}
+
+.bouton:hover {
+    background-color: yellow;
+    transition: all 0.5s ease-in;
+    color: black;
+    border: 2px solid black;
+}
+
+h1, h2 {
+    font-family: 'Handjet', cursive;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+}
+p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 90%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    background: rgb(7,100,212);
+    background: linear-gradient(90deg, rgba(7,100,212,1) 0%, rgba(249,247,118,1) 50%, rgba(249,249,249,1) 100%);
+    justify-content: space-around;
+    padding-block: 20px;
+}
+.infoLiens {
+    font-size: 50px;
+}
+
+#burgerList {
+    display: none;
+}
+.menuBurger {
+    display: none;
+  }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        width: 90%;
+        margin: 40px;
+        margin-top: 70px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 90%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .infoLiens {
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .ri-home-2-fill {
+        display: none;
+    }
+
+    .burger {
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        right: 80px;
+        
+      }
+      
+      .bar {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+        
+      }
+      
+      .menuBurger {
+        display: none;
+      }
+      
+      .menuBurger.open {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        margin-top: 40px;
+        position: absolute;
+        right: 0px;
+        
+      }
+      .lienBurger {
+        text-decoration: none;
+        color:black;
+        margin-top: 10px;
+        font-size: 25px;
+      }
+      .navBar.open {
+        height: 160px;
+      }
+}

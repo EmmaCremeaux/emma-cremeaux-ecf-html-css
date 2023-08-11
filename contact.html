@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navBar" id="navBar">
+        <a href="/accueil.html"><i class="ri-home-2-fill"></i></a>
+        <div class="burger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+          
+        <ul class="menuBurger" id="menuList">
+            <a class = "lienBurger" href="/accueil.html">Accueil</a>
+            <a class = "lienBurger" href="/presentation.html">Les starters</a>
+            <a class = "lienBurger" href="/contact.html">Contact</a>
+        </ul>
+          
+        <script>
+        function toggleMenu() {
+          var menu = document.getElementById("menuList");
+          menu.classList.toggle("open");
+          var navBar = document.getElementById("navBar");
+          navBar.classList.toggle("open");
+        }
+        </script>
+
+        <div class="menu">
+            <a href="/presentation.html">Les starters</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+    </div>
+
+    <header class="headerContact">
+        <div class="banniere">
+            <h1 class="titreBanniere">Les starters de la première génération</h1>
+            <p class="contactP">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, commodi laborum molestias dolore, ratione delectus illum hic doloribus magni eveniet cum! Cum nam omnis, labore perspiciatis vero enim sint itaque?
+                Earum quae maxime quam mollitia veniam laborum aliquid esse porro, sint, voluptas cumque totam perspiciatis ullam? Nam sapiente fuga facere non recusandae? Maxime similique et at nesciunt enim? Placeat, ex?
+                Earum obcaecati aperiam corporis corrupti ad eaque amet, minima excepturi quae eum id quasi unde repellendus? Dignissimos ut corrupti odit, nulla vitae maxime, quo voluptates fugit laudantium qui et iste.
+                Quaerat expedita, blanditiis quis ipsam, illo aliquid neque voluptatem inventore maiores molestias dicta error sit ipsa numquam alias animi labore obcaecati, ex quisquam cum dolor velit commodi. Laboriosam, quae illum.
+            </p>
+            
+            <div class="boutons">
+               <a id="boutonForm" class="bouton" href="#formulaire">formulaire</a>
+            </div>
+        </div>
+    </header>
+
+    <form id="formulaire" class="formContact">
+            <label class="label" for="lastname" name="lastname">Nom :</label>
+            <input class="input" type="text" name="lastname" placeholder="votre nom">
+            
+            <label class="label" for="firstname" name="firstname">Prénom :</label>
+            <input class="input" type="text" name="firstname" placeholder="votre prénom">
+
+            <label class="label" for="">Téléphone :</label>
+            <input class="input" type="number" name="telephone" placeholder="votre numeros de telephone">
+
+            <label class="label" for="email" name="email">Email :</label>
+            <input class="input" type="email" name="email" placeholder="bob@example.com">
+
+            <label class="label" for="message" name="message">Votre message :</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+        
+        <button class="bouton" type="submit" value="inscription">Inscription</button>
+    </form>
+
+    <footer class="footer">
+        <div class="info">
+            <p>
+                99 Rue Paul Bert, 62300 Lens <br>
+                reservation@louvrelens.fr <br>
+                03.21.18.62.62 <br>
+            </p>
+            <div class="infoLiens">
+                <a href="https://www.facebook.com/POPSchoolFr/"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="https://www.linkedin.com/company/popschoolp.l.u.s/?originalSubdomain=fr"><i class="ri-linkedin-box-fill"></i></a>
+            </div>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.5725625893997!2d2.8113847767101854!3d50.430434988804535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd30f32995b9ed%3A0x227e61b83fe3bfcd!2sLouvre%20Lens%20Vall%C3%A9e!5e0!3m2!1sfr!2sfr!4v1691663612757!5m2!1sfr!2sfr" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </footer>
+</body>
+</html>

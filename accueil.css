@@ -1,0 +1,73 @@
+
+.imageFamille {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+
+span {
+    font-weight: bold;
+}
+.section1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+.presentation {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 50px;
+}
+.resume {
+    margin-block: 100px;
+}
+h2 {
+    text-align: center;
+}
+#savoirPlus {
+    margin: 0 auto;
+}
+
+.generation1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-block: 100px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1047px) {
+    .ligne{
+        display: none;
+    }
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        justify-content: space-around;
+    }
+    .presentationImage {
+        margin: 0 auto;
+    }
+
+    .presentation {
+        margin: 0 auto;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+
+@media (max-width: 767px) {
+    .ligne{
+        display: none;
+    }
+  }
